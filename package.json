@@ -4,11 +4,25 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TyFB/hollow-notes.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/TyFB/hollow-notes/issues"
+  },
+  "homepage": "https://github.com/TyFB/hollow-notes#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
   }
 }

@@ -1,1 +1,1 @@
-# Note Taker Starter Code
+# Hollow Notes
