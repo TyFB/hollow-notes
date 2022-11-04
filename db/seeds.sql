@@ -7,23 +7,23 @@ VALUES
 
 INSERT INTO roles (title, salary, department_id)
 VALUES 
-    ('Sales', 100000),
-    ('Salesperson', 80000),
-    ('Lead Engineer', 150000),
-    ('Software Engineer', 120000),
-    ('Account Manager', 160000),
-    ('Accountant', 125000),
-    ('Legal Team Lead', 250000),
-    ('Laywer', 190000);
+    ('Sales Lead', 100000, 1),
+    ('Salesperson', 80000, 1),
+    ('Lead Engineer', 150000, 2),
+    ('Software Engineer', 120000, 2),
+    ('Account Manager', 160000, 3),
+    ('Accountant', 125000, 3),
+    ('Legal Team Lead', 250000, 4),
+    ('Laywer', 190000, 4);
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES 
-    ('Ty', 'Boufford'),
-    ('John', 'Doe'),
-    ('Mike', 'Chan'),
-    ('Ashley', 'Rodriguez'),
-    ('Kevin', 'Tupik'),
-    ('Kunal', 'Singh'),
-    ('Malia', 'Brown'),
-    ('Sarah', 'Lourd'),
-    ('Tom', 'Allen');
+    ('Ty', 'Boufford', NULL, NULL),
+    ('John', 'Doe', 1, NULL),
+    ('Mike', 'Chan', 2, NULL),
+    ('Ashley', 'Rodriguez', 3, NULL),
+    ('Kevin', 'Tupik', 4, NULL),
+    ('Kunal', 'Singh', 5, NULL),
+    ('Malia', 'Brown', 6, NULL),
+    ('Sarah', 'Lourd', 7, NULL),
+    ('Tom', 'Allen', 8, NULL);

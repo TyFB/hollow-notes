@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const { notes } = require('./data/notes')
 
-app.use(express.urlencoded({ extended: true}));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.post('/api/notes', (req, res) => {
